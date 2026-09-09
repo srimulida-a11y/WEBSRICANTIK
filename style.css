@@ -1,0 +1,270 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #555;
+  background-color: #fffafa;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 40px;
+
+  background-color: #f8e9ed;
+  border-bottom: 1px solid #ead6dc;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #a87584;
+}
+
+/* NAVBAR */
+nav ul {
+  display: flex;
+  gap: 18px;
+
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #66565b;
+}
+
+nav a:hover {
+  color: #b98292;
+}
+
+/* SEMUA SECTION */
+section {
+  padding: 45px 10%;
+}
+
+section h3 {
+  text-align: left;
+  margin-bottom: 20px;
+
+  color: #a87584;
+  font-size: 28px;
+}
+
+section article {
+  max-width: 750px;
+  margin-left: 0;
+
+  background-color: white;
+
+  padding: 25px 30px;
+
+  border-left: 4px solid #c99ba8;
+  border-radius: 8px;
+
+  line-height: 1.8;
+}
+
+/* BERANDA */
+.hero {
+  min-height: 85vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  background-color: #fff4f6;
+}
+
+.hero-text {
+  max-width: 550px;
+
+  text-align: left;
+}
+
+.salam {
+  color: #a87584;
+}
+
+.hero h1 {
+  margin: 15px 0;
+
+  font-size: 42px;
+
+  color: #51464a;
+}
+
+.profesi {
+  margin-bottom: 15px;
+
+  font-size: 20px;
+
+  color: #80656e;
+}
+
+.deskripsi {
+  line-height: 1.7;
+
+  color: #5f5559;
+}
+
+/* BUTTON */
+.hero button {
+  margin-top: 20px;
+
+  padding: 10px 22px;
+
+  background-color: #c99ba8;
+  color: white;
+
+  border: none;
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #a87584;
+}
+
+/* VIDEO */
+.hero-image {
+  position: relative;
+
+  width: 300px;
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+/* VIDEO BULAT */
+.hero-image video {
+  width: 320px;
+  height: 320px;
+
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(168, 117, 132, 0.25);
+}
+
+/* WARNA SECTION */
+#tentang,
+#pendidikan,
+#hobi {
+  background-color: #fffafa;
+}
+
+#portfolio,
+#pengalaman,
+#kontak {
+  background-color: #fdf0f3;
+}
+
+/* TENTANG SAYA */
+#tentang {
+  text-align: left;
+}
+
+#tentang h3 {
+  text-align: left;
+}
+
+#tentang article {
+  margin-left: 0;
+}
+
+/* HOBI */
+#hobi {
+  text-align: left;
+}
+
+/* HP */
+@media (max-width: 700px) {
+
+  header {
+    flex-direction: column;
+
+    gap: 12px;
+
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 40px 7%;
+  }
+
+  .hero {
+    min-height: 80vh;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: left;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero-image {
+    width: 280px;
+    height: 280px;
+  }
+
+  .lingkaran {
+    width: 270px;
+    height: 270px;
+  }
+
+  .hero-image video {
+    width: 230px;
+    height: 230px;
+  }
+
+  section article {
+    padding: 20px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
