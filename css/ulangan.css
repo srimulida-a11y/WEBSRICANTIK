@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background: #fffafc;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+}
+
+header h1 {
+  margin: 0 0 20px;
+  color: #b45f83;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+/* MENU */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  margin: 0 8px;
+  color: #9b647a;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #e48aaa;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 25px;
+  background: #fff;
+}
+
+.hero h4 {
+  margin-bottom: 20px;
+  color: #b45f83;
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  margin: 0;
+  color: #765d67;
+  font-size: 16px;
+}
+
+/* GARIS */
+hr {
+  border: 0;
+  border-top: 2px solid #ead5df;
+  margin: 0;
+}
+
+/* TEMPAT FOTO */
+.container {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+
+  padding: 40px 20px;
+  min-height: 55vh;
+
+  overflow: hidden;
+  background: #fffafc;
+}
+
+/* BUBBLE BESAR */
+.container::before {
+  content: "";
+
+  position: absolute;
+
+  width: 45px;
+  height: 45px;
+
+  border: 3px solid rgba(231, 150, 180, 0.3);
+  border-radius: 50%;
+
+  left: 5%;
+  bottom: -60px;
+
+  box-shadow:
+    120px 100px 0 -12px rgba(231, 150, 180, 0.25),
+    250px -50px 0 -18px rgba(231, 150, 180, 0.2),
+    450px 80px 0 -8px rgba(231, 150, 180, 0.25),
+    650px -20px 0 -15px rgba(231, 150, 180, 0.2),
+    800px 120px 0 -10px rgba(231, 150, 180, 0.25);
+
+  animation: naik 10s infinite ease-in;
+}
+
+/* BUBBLE KECIL */
+.container::after {
+  content: "";
+
+  position: absolute;
+
+  width: 35px;
+  height: 35px;
+
+  border: 2px solid rgba(231, 150, 180, 0.3);
+  border-radius: 50%;
+
+  right: 12%;
+  bottom: -50px;
+
+  animation: naik 7s infinite ease-in;
+  animation-delay: 2s;
+}
+
+/* GERAK BUBBLE */
+@keyframes naik {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-250px) translateX(40px);
+  }
+
+  100% {
+    transform: translateY(-600px) translateX(-30px);
+    opacity: 0;
+  }
+}
+
+/* KOTAK FOTO */
+.kotak {
+  position: relative;
+  z-index: 2;
+
+  width: 260px;
+  padding: 15px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border: 2px solid #f0dce4;
+  border-radius: 18px;
+
+  box-shadow: 0 5px 15px rgba(190, 130, 155, 0.15);
+}
+
+/* FOTO */
+.kotak img {
+  width: 230px;
+  height: 150px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+/* KATEGORI */
+.kotak p {
+  color: #c17a98;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  margin: 18px 0 10px;
+}
+
+/* JUDUL FOTO */
+.kotak h3 {
+  color: #654b57;
+  font-size: 20px;
+
+  margin: 0 0 10px;
+}

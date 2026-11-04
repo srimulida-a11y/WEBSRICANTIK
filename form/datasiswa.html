@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+select {
+    width: 100%;
+    height: 27px;
+    padding: 5px 8px;
+    border: 1px solid #dcdde5;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: white;
+}
+    </style>
+
+   
+</head>
+<body>
+    <h4>Tambah Data Siswa</h4>
+    <div class="container">
+        <label for="NIS">NIS</label>
+         <input type="text" placeholder="Masukan NIS">
+         <label>Nama Lengkap</label>
+         <input type="text" placeholder="Masukan nama lengkap"
+        <label>Pilih Kelas</label>
+        <select>
+            <option>X</option>
+            <option>XI</option>
+            <option>XII</option>
+        </select>
+        <label>Jenis Kelamin</label>
+        <input type="radio" name "jk" value="Laki-laki"> Laki-laki
+        <input type="radio" name "jk" value="Perempuan">Perempuan
+       <label>Tanggal Lahir</label>
+       <input type="datetime-local"
+      <button type="button">Tambah</button>
+      <button type="reset"> Reset</button>
+
+    </div>
+
+    <div class="tabel">
+        <h3>Data Siswa</h3>
+
+        <input type="text" placeholder="Cari nama atau NIS...">
+
+        <table>
+            <tr>
+                <th>No</th>
+                <th>NIS</th>
+                <th>Nama Lengkap</th>
+                <th>Kelas</th>
+                <th>Jenis Kelamin</th>
+                <th>Tanggal Lahir</th>
+                <th>Aksi</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>001</td>
+                <td>Sri Mulida</td>
+                <td>XI RPL 3</td>
+                <td>Perempuan</td>
+                <td>2010-16-04</td>
+                <td>✏️ 🗑️</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>002</td>
+                <td>Budi Santoso</td>
+                <td>X RPL 1</td>
+                <td>Laki-laki</td>
+                <td>2008-03-22</td>
+                <td>✏️ 🗑️</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>003</td>
+                <td>Citra Lestari</td>
+                <td>X RPL 2</td>
+                <td>Perempuan</td>
+                <td>2008-07-10</td>
+                <td>✏️ 🗑️</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>004</td>
+                <td>Deni Pratama</td>
+                <td>X RPL 2</td>
+                <td>Laki-laki</td>
+                <td>2008-09-05</td>
+                <td>✏️ 🗑️</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>005</td>
+                <td>Eka Wijaya</td>
+                <td>X RPL 3</td>
+                <td>Perempuan</td>
+                <td>2008-11-18</td>
+                <td>✏️ 🗑️</td>
+            </tr>
+        </table>
+
+        <p>Menampilkan 1 - 5 dari 5 data</p>
+    </div>
+</body>
+</html>

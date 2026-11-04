@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 30%;
+            height: 50%;
+            padding: 30px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            background-color: #44a063;
+        }
+
+        .btnSubmit {
+            width: 30%;
+            align-self: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Login untuk orang cantik</h2>
+    <div>
+        <label>Roll no:</label>
+        <input type="text">
+        <label>Student name:</label>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <label>Father's name:</label>
+        <input type="text">
+        <label>Date of birth:</label>
+        <select>
+            <option>Day</option>
+            <option>jumat</option>
+            <option>rabu</option>
+        </select>
+        <select>
+            <option>Month</option>
+            <option>April</option>
+            <option>Juni</option>
+            <option>Agustus</option>
+        </select>
+        <select>
+            <option>Year</option>
+            <option>2008</option>
+            <option>2010</option>
+        </select>
+        <label>Mobile No.:</label>
+        <input type="text" placeholder="Mobile No.">
+        <label>Email id:</label>
+        <input type="email">
+        <label for="password">Password</label>
+        <input type="password" placeholder="enter your password">
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> male
+        <input type="radio" name="gender" value="female"> female
+        <label>Department:</label>
+        <input type="checkbox" name="department" value="cse"> CSE
+        <input type="checkbox" name="department" value="ece"> ECE
+        <input type="checkbox" name="department" value="eee"> EEE
+        <label>Course:</label>
+        <select>
+            <option>......Select Course.....</option>
+            <option>Hacker kelas kakap</option>
+        </select>
+        <label>Student photo:</label>
+        <input type="file" name="photo">
+        <label>City:</label>
+        <input type="text">
+        <label>Adress:</label>
+        <input type="text">
+        <button class="btnSubmit" type="submit">Register</button>
+    </div>
+</body>
+
+</html>

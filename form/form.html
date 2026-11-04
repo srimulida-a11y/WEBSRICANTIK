@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container {
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 30%;
+            height: 50%;
+            padding: 30px;
+            border: 1px solid grey;
+            border-radius: 10px;
+        }
+
+        .btnSubmit {
+            width: 30%;
+            align-self: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>Login</h3>
+            <h4>Need a Mailchimp account? <a href="#">Create an account</a></h4>
+
+            <form action="" style="display: flex; flex-direction: column;">
+                <label for="email">Email</label>
+                <input type="email" placeholder="enter your email" required>
+                <label for="password">Password</label>
+                <input type="password" placeholder="enter your password">
+                <div>
+
+                    <input type="range"> <label for="">Keep me logged in</label>
+                </div>
+                <button class="btnSubmit" type="submit">Log in</button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- <form action="">
+        <label for="jurusan">Jurusan</label>
+        <select name="jurusan" id="jurusan">
+            <option value="">--Pilih--</option>
+            <option value="rpl">Rekayasa Perangkat Lunak</option>
+            <option value="tsm">Teknik Sepeda Motor</option>
+            <option value="atph">Agribisnis tanaman pangan dan holtikultura</option>
+        </select>
+    </form> -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #754b60;
+  background: linear-gradient(135deg, #fff5f8, #ffe4ed, #fff9f5);
+  overflow-x: hidden;
+  padding-top: 75px;
+  position: relative;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 75px;
+  padding: 0 85px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  background: rgba(255, 225, 238, 0.95);
+  backdrop-filter: blur(15px);
+
+  border-bottom: 2px solid #f5bfd4;
+  box-shadow: 0 5px 20px rgba(211, 128, 164, 0.2);
+}
+
+/* LOGO */
+.logo {
+  color: #d879a0;
+  font-family: 'Pacifico', cursive;
+  font-size: 23px;
+}
+
+/* NAVBAR */
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #754b60;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s;
+  padding: 9px 12px;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #e995b5;
+  box-shadow: 0 4px 12px #efbad0;
+}
+
+/* BERANDA */
+.hero {
+  min-height: 700px;
+  padding: 60px 85px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+
+  background: linear-gradient(120deg, #fff5f8, #ffe3ed, #fff8f4);
+}
+
+.hero-text {
+  width: 55%;
+}
+
+.salam {
+  color: #d879a0;
+  font-family: 'Pacifico', cursive;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  color: #a64f76;
+  margin-bottom: 10px;
+}
+
+.profesi {
+  font-size: 21px;
+  color: #bd7593;
+  margin-bottom: 20px;
+}
+
+.profesi u {
+  color: #a64f76;
+}
+
+.deskripsi {
+  width: 650px;
+  max-width: 100%;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #806477;
+  margin-bottom: 28px;
+}
+
+/* BUTTON */
+button {
+  padding: 14px 32px;
+  border: 2px solid white;
+  border-radius: 30px;
+
+  background: linear-gradient(120deg, #ed9dbb, #d879a0);
+  color: white;
+
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px #edc0d2;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px #e8a9c3;
+}
+
+/* VIDEO */
+.hero-image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image video {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  border: 8px solid white;
+  box-shadow: 0 0 0 5px #f3bdd2,
+              0 10px 30px #e9b4ca;
+}
+
+/* SECTION */
+section:not(.hero) {
+  padding: 70px 85px;
+  position: relative;
+  scroll-margin-top: 90px;
+}
+
+section h3 {
+  text-align: center;
+  color: #d879a0;
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* KOTAK ISI */
+article {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #f8d5e2;
+  border-radius: 22px;
+
+  line-height: 1.8;
+
+  box-shadow: 0 8px 25px rgba(213, 135, 168, 0.15);
+  transition: 0.3s;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(213, 135, 168, 0.22);
+}
+
+/* PENDIDIKAN */
+#pendidikan {
+  background: linear-gradient(135deg, #ffeaf1, #fff5f8);
+}
+
+.pendidikan {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* KOTAK SEKOLAH */
+.sekolah {
+  width: 150px;
+  padding: 18px;
+
+  background: white;
+  border: 2px solid #f8d5e2;
+  border-radius: 18px;
+
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(213, 135, 168, 0.12);
+  transition: 0.3s;
+}
+
+.sekolah:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 20px #efc4d5;
+}
+
+.sekolah img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f8d5e2;
+  margin-bottom: 10px;
+}
+
+.sekolah b {
+  display: block;
+  color: #d879a0;
+  margin-bottom: 5px;
+}
+
+.sekolah p {
+  font-size: 12px;
+  color: #806477;
+}
+
+/* SECTION LAIN */
+#tentang,
+#portfolio,
+#pengalaman,
+#hobi {
+  background: linear-gradient(135deg, #fff9fb, #ffedf3);
+}
+
+#kontak {
+  background: linear-gradient(135deg, #ffeaf1, #fff5f8);
+}
+
+#kontak article {
+  text-align: center;
+}
+
+/* HIASAN JUDUL */
+section h3::before {
+  content: "✧  ♡  ";
+  color: #ec91b4;
+}
+
+section h3::after {
+  content: "  ♡  ✧";
+  color: #ec91b4;
+}
+
+/* GELEMBUNG PINK */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+
+  background-image:
+    radial-gradient(circle at 5% 15%, white 0 5px, #f8c3d8 7px, transparent 17px),
+    radial-gradient(circle at 15% 75%, white 0 8px, #f4bad1 10px, transparent 23px),
+    radial-gradient(circle at 28% 35%, white 0 4px, #f5b5ce 7px, transparent 16px),
+    radial-gradient(circle at 40% 85%, white 0 9px, #f8c3d8 11px, transparent 25px),
+    radial-gradient(circle at 55% 20%, white 0 6px, #f5b5ce 9px, transparent 20px),
+    radial-gradient(circle at 68% 65%, white 0 8px, #f7c1d6 10px, transparent 24px),
+    radial-gradient(circle at 80% 30%, white 0 5px, #f4b6cf 8px, transparent 19px),
+    radial-gradient(circle at 93% 80%, white 0 10px, #f5bfd5 13px, transparent 28px);
+
+  background-repeat: repeat;
+  animation: bubbleMove 10s ease-in-out infinite alternate;
+}
+
+/* KILAUAN */
+body::after {
+  content: "✧     ✦       ♡      ✧      ✦       ♡";
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 6;
+
+  color: #e98caf;
+  font-size: 27px;
+  letter-spacing: 35px;
+  line-height: 150px;
+  opacity: 0.55;
+
+  animation: sparkle 4s ease-in-out infinite alternate;
+}
+
+/* ANIMASI GELEMBUNG */
+@keyframes bubbleMove {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+/* ANIMASI KILAUAN */
+@keyframes sparkle {
+  from {
+    opacity: 0.2;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0.8;
+    transform: translateY(-15px);
+  }
+}
+
+/* TAMPILAN HP */
+@media (max-width: 768px) {
+
+  header {
+    position: static;
+    height: auto;
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  body {
+    padding-top: 0;
+  }
+
+  nav ul {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 50px 25px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image video {
+    width: 280px;
+    height: 280px;
+  }
+
+  section:not(.hero) {
+    padding: 50px 25px;
+  }
+
+  .pendidikan {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .sekolah {
+    width: 130px;
+  }
+
+  .sekolah img {
+    width: 60px;
+    height: 60px;
+  }
+}
