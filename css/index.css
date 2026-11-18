@@ -12,11 +12,10 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  color: #754b60;
-  background: linear-gradient(135deg, #fff5f8, #ffe4ed, #fff9f5);
+  color: #66515a;
+  background: linear-gradient(135deg, #fffaf7, #fff1f3, #f8f0ed);
   overflow-x: hidden;
   padding-top: 75px;
-  position: relative;
 }
 
 /* HEADER */
@@ -34,16 +33,16 @@ header {
   left: 0;
   z-index: 1000;
 
-  background: rgba(255, 225, 238, 0.95);
+  background: rgba(255, 250, 248, 0.94);
   backdrop-filter: blur(15px);
 
-  border-bottom: 2px solid #f5bfd4;
-  box-shadow: 0 5px 20px rgba(211, 128, 164, 0.2);
+  border-bottom: 1px solid #eedce0;
+  box-shadow: 0 4px 15px rgba(160, 120, 130, 0.10);
 }
 
 /* LOGO */
 .logo {
-  color: #d879a0;
+  color: #bd8195;
   font-family: 'Pacifico', cursive;
   font-size: 23px;
 }
@@ -58,7 +57,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #754b60;
+  color: #66515a;
   font-size: 14px;
   font-weight: 700;
   transition: 0.3s;
@@ -68,8 +67,7 @@ nav a {
 
 nav a:hover {
   color: white;
-  background-color: #e995b5;
-  box-shadow: 0 4px 12px #efbad0;
+  background-color: #c995a7;
 }
 
 /* BERANDA */
@@ -82,7 +80,7 @@ nav a:hover {
   align-items: center;
   gap: 40px;
 
-  background: linear-gradient(120deg, #fff5f8, #ffe3ed, #fff8f4);
+  background: linear-gradient(120deg, #fffaf7, #f9ecee, #fff8f3);
 }
 
 .hero-text {
@@ -90,7 +88,7 @@ nav a:hover {
 }
 
 .salam {
-  color: #d879a0;
+  color: #bd8195;
   font-family: 'Pacifico', cursive;
   font-size: 23px;
   margin-bottom: 15px;
@@ -99,18 +97,18 @@ nav a:hover {
 .hero h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 48px;
-  color: #a64f76;
+  color: #795463;
   margin-bottom: 10px;
 }
 
 .profesi {
   font-size: 21px;
-  color: #bd7593;
+  color: #987b86;
   margin-bottom: 20px;
 }
 
 .profesi u {
-  color: #a64f76;
+  color: #bd8195;
 }
 
 .deskripsi {
@@ -118,7 +116,7 @@ nav a:hover {
   max-width: 100%;
   font-size: 16px;
   line-height: 1.8;
-  color: #806477;
+  color: #806f75;
   margin-bottom: 28px;
 }
 
@@ -128,7 +126,7 @@ button {
   border: 2px solid white;
   border-radius: 30px;
 
-  background: linear-gradient(120deg, #ed9dbb, #d879a0);
+  background: linear-gradient(120deg, #d9a9b8, #bd8195);
   color: white;
 
   font-family: 'Quicksand', sans-serif;
@@ -136,13 +134,12 @@ button {
   font-weight: bold;
   cursor: pointer;
 
-  box-shadow: 0 5px 15px #edc0d2;
+  box-shadow: 0 5px 15px rgba(189, 129, 149, 0.2);
   transition: 0.3s;
 }
 
 button:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px #e8a9c3;
 }
 
 /* VIDEO */
@@ -158,10 +155,9 @@ button:hover {
   height: 350px;
   object-fit: cover;
   border-radius: 50%;
-
   border: 8px solid white;
-  box-shadow: 0 0 0 5px #f3bdd2,
-              0 10px 30px #e9b4ca;
+  box-shadow: 0 0 0 4px #ead4da,
+              0 10px 30px rgba(150, 110, 125, 0.15);
 }
 
 /* SECTION */
@@ -173,10 +169,18 @@ section:not(.hero) {
 
 section h3 {
   text-align: center;
-  color: #d879a0;
+  color: #bd8195;
   font-family: 'Pacifico', cursive;
   font-size: 32px;
   margin-bottom: 30px;
+}
+
+section h3::before {
+  content: "✧  ♡  ";
+}
+
+section h3::after {
+  content: "  ♡  ✧";
 }
 
 /* KOTAK ISI */
@@ -185,24 +189,23 @@ article {
   margin: auto;
   padding: 30px;
 
-  background: rgba(255, 255, 255, 0.8);
-  border: 2px solid #f8d5e2;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #ead9dd;
   border-radius: 22px;
 
   line-height: 1.8;
 
-  box-shadow: 0 8px 25px rgba(213, 135, 168, 0.15);
+  box-shadow: 0 8px 25px rgba(150, 110, 125, 0.10);
   transition: 0.3s;
 }
 
 article:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(213, 135, 168, 0.22);
 }
 
 /* PENDIDIKAN */
 #pendidikan {
-  background: linear-gradient(135deg, #ffeaf1, #fff5f8);
+  background: linear-gradient(135deg, #f8eeed, #fff9f6);
 }
 
 .pendidikan {
@@ -216,18 +219,17 @@ article:hover {
   width: 150px;
   padding: 18px;
 
-  background: white;
-  border: 2px solid #f8d5e2;
+  background: #fffdfb;
+  border: 1px solid #ead9dd;
   border-radius: 18px;
 
   text-align: center;
-  box-shadow: 0 5px 15px rgba(213, 135, 168, 0.12);
+  box-shadow: 0 5px 15px rgba(150, 110, 125, 0.10);
   transition: 0.3s;
 }
 
 .sekolah:hover {
   transform: translateY(-7px);
-  box-shadow: 0 10px 20px #efc4d5;
 }
 
 .sekolah img {
@@ -235,19 +237,19 @@ article:hover {
   height: 70px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #f8d5e2;
+  border: 3px solid #f0e0e3;
   margin-bottom: 10px;
 }
 
 .sekolah b {
   display: block;
-  color: #d879a0;
+  color: #bd8195;
   margin-bottom: 5px;
 }
 
 .sekolah p {
   font-size: 12px;
-  color: #806477;
+  color: #806f75;
 }
 
 /* SECTION LAIN */
@@ -255,96 +257,99 @@ article:hover {
 #portfolio,
 #pengalaman,
 #hobi {
-  background: linear-gradient(135deg, #fff9fb, #ffedf3);
+  background: linear-gradient(135deg, #fffaf7, #f8f1ef);
 }
 
 #kontak {
-  background: linear-gradient(135deg, #ffeaf1, #fff5f8);
+  background: linear-gradient(135deg, #f8eeed, #fff9f6);
 }
 
 #kontak article {
   text-align: center;
 }
 
-/* HIASAN JUDUL */
-section h3::before {
-  content: "✧  ♡  ";
-  color: #ec91b4;
-}
-
-section h3::after {
-  content: "  ♡  ✧";
-  color: #ec91b4;
-}
-
-/* GELEMBUNG PINK */
-body::before {
-  content: "";
+/* GELEMBUNG BERGERAK */
+.bubble {
   position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  bottom: -100px;
+  border-radius: 50%;
   pointer-events: none;
   z-index: 5;
 
-  background-image:
-    radial-gradient(circle at 5% 15%, white 0 5px, #f8c3d8 7px, transparent 17px),
-    radial-gradient(circle at 15% 75%, white 0 8px, #f4bad1 10px, transparent 23px),
-    radial-gradient(circle at 28% 35%, white 0 4px, #f5b5ce 7px, transparent 16px),
-    radial-gradient(circle at 40% 85%, white 0 9px, #f8c3d8 11px, transparent 25px),
-    radial-gradient(circle at 55% 20%, white 0 6px, #f5b5ce 9px, transparent 20px),
-    radial-gradient(circle at 68% 65%, white 0 8px, #f7c1d6 10px, transparent 24px),
-    radial-gradient(circle at 80% 30%, white 0 5px, #f4b6cf 8px, transparent 19px),
-    radial-gradient(circle at 93% 80%, white 0 10px, #f5bfd5 13px, transparent 28px);
+  background: radial-gradient(
+    circle at 30% 25%,
+    rgba(255,255,255,0.95),
+    rgba(232, 204, 211, 0.55) 45%,
+    rgba(198, 157, 174, 0.12)
+  );
 
-  background-repeat: repeat;
-  animation: bubbleMove 10s ease-in-out infinite alternate;
+  border: 1px solid rgba(255,255,255,0.8);
+  box-shadow: inset -3px -4px 10px rgba(190, 140, 160, 0.12);
+
+  animation: naik 12s linear infinite;
 }
 
-/* KILAUAN */
-body::after {
-  content: "✧     ✦       ♡      ✧      ✦       ♡";
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 6;
-
-  color: #e98caf;
-  font-size: 27px;
-  letter-spacing: 35px;
-  line-height: 150px;
-  opacity: 0.55;
-
-  animation: sparkle 4s ease-in-out infinite alternate;
+/* UKURAN DAN POSISI GELEMBUNG */
+.bubble:nth-child(1) {
+  width: 35px;
+  height: 35px;
+  left: 10%;
+  animation-duration: 12s;
 }
 
-/* ANIMASI GELEMBUNG */
-@keyframes bubbleMove {
+.bubble:nth-child(2) {
+  width: 55px;
+  height: 55px;
+  left: 28%;
+  animation-duration: 16s;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(3) {
+  width: 25px;
+  height: 25px;
+  left: 48%;
+  animation-duration: 10s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(4) {
+  width: 70px;
+  height: 70px;
+  left: 68%;
+  animation-duration: 18s;
+  animation-delay: 5s;
+}
+
+.bubble:nth-child(5) {
+  width: 40px;
+  height: 40px;
+  left: 88%;
+  animation-duration: 13s;
+  animation-delay: 2s;
+}
+
+@keyframes naik {
   0% {
-    transform: translateY(0);
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.7;
   }
 
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-55vh) translateX(35px);
+  }
+
+  85% {
+    opacity: 0.6;
   }
 
   100% {
-    transform: translateY(15px);
-  }
-}
-
-/* ANIMASI KILAUAN */
-@keyframes sparkle {
-  from {
-    opacity: 0.2;
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 0.8;
-    transform: translateY(-15px);
+    transform: translateY(-115vh) translateX(-25px);
+    opacity: 0;
   }
 }
 
